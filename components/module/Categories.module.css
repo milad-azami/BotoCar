@@ -1,0 +1,30 @@
+.container {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: fit-content;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.container div {
+  text-align: center;
+  margin: 5px;
+  background-color: #befa00;
+  padding: 5px;
+  padding-bottom: 0;
+  border-radius: 5px;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 320px;
+    flex-wrap: wrap;
+  }
+
+  .container div {
+    width: 150px;
+  }
+}
